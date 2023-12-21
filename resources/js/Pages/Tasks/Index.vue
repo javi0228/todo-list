@@ -21,7 +21,7 @@
               <th scope="col" class="px-6 py-3 text-center">Done</th>
               <th scope="col" class="px-6 py-3">Title</th>
               <th scope="col" class="px-6 py-3" v-can:create-task>User</th>
-              <th scope="col" class="px-6 py-3 text-center">Action</th>
+              <th scope="col" class="px-6 py-3 text-center" v-can:create-task>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -46,7 +46,7 @@
               <td class="px-6 py-4" v-can:create-task>
                 {{ task.user.name }}
               </td>
-              <td class="px-6 py-4 flex flex-row justify-center items-center gap-4">
+              <td class="px-6 py-4 flex flex-row justify-center items-center gap-4" v-can:create-task>
                 <!-- Trash icon -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
